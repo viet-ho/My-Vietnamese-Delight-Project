@@ -1,24 +1,5 @@
-# README
+# My Vietnamese Delight
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+CPSC 471 - Data Base Management Systems
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Final Project - My Vietnamese Delight
