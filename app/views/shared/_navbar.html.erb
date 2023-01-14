@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fef5ce;">
+  <a class="navbar-brand" href="#">
+    <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/restaurant/cover_square/969a31e4-885a-4b9e-abf1-a6ad5e361920.png" width="30" height="30" alt="">
+  </a>
+  <a class="navbar-brand" href="/home">My Vietnamese Delight</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/home">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/menu">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/promoitem">Promo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/employees">Admin Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-outline-success" href="/carts/<%= Cart.last.id %>" role="button">Cart</button></a>
+    </li>
+  </ul>
+</div>
+</nav>

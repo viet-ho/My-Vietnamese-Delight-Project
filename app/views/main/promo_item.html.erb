@@ -1,0 +1,20 @@
+<h1>Promo Items Page</h1>
+
+
+<div class="menu-container">
+  <div class="row">
+
+  <% @promo_items.each do |promo_item| %>
+    <div class="col-4">
+      <h5><%=promo_item.name %></h5>
+      <p><%= promo_item.description %></p>
+      <span><%=promo_item.price %></span>
+
+      <%= button_to "Add #{promo_item.name} to cart", line_items_path(:promo_item_id => promo_item.id) %>
+      <%= image_tag promo_item.image, :size => "300x200", :crop => :fill %>
+    </div>
+  <% end %>
+
+
+  </div>
+</div>

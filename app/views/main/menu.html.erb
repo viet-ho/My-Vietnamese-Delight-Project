@@ -1,0 +1,22 @@
+<h1>Menu Page</h1>
+
+
+<div class="menu-container">
+  <div class="row">
+
+  <% @menu_items.each do |menu_item| %>
+    <div class="col-4">
+      <h5><%=menu_item.name %></h5>
+      <p><%= menu_item.description %></p>
+      <span><%=menu_item.price %></span>
+      <% if menu_item.ispromo %>
+        <span class="promo"><b>On Promo!</b></span>
+      <% end %>
+      <%= button_to "Add #{menu_item.name} to cart", line_items_path(:menu_item_id => menu_item.id) %>
+      <%= image_tag menu_item.image, :size => "300x200", :crop => :fill %>
+    </div>
+  <% end %>
+
+
+  </div>
+</div>

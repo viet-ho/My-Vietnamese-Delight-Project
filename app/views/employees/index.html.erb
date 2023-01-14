@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Employees</h1>
+
+<div id="employees">
+  <% @employees.each do |employee| %>
+    <%= render employee %>
+    <p>
+      <%= link_to "Show this employee", employee %>
+    </p>
+  <% end %>
+</div>
+
+<a class="btn btn-outline-success" href="/newemployees" role="button">New Employee</button></a>
+<a class="btn btn-outline-success" href="/menuitems" role="button">Modify Menu</button></a>
+<a class="btn btn-outline-success" href="/promoitems" role="button">Modify Promos</button></a>
+<a class="btn btn-outline-success" href="/orders" role="button">View Orders</button></a>

@@ -1,0 +1,16 @@
+<h2>All Orders</h2>
+
+<% @orders.reverse.each do |order| %>
+  <p>
+  Order ID: <b><%= order.id %></b><br/>
+  Name: <%= order.name %><br/>
+  Email: <%= order.email %><br/>
+  </p>
+  <p>Line Items: </p>
+  <ul>
+    <% order.line_items.each do |item| %>
+    <li><%= item.quantity %> x <%= item.menu_item.name %></li>
+    <% end %>
+  </ul>
+  <hr/>
+<% end %>

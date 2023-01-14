@@ -1,0 +1,15 @@
+<h2>Cart show</h2>
+<ul>
+  <% @cart.line_items.each do |line_item| %>
+    <li>Item: <%= line_item.menu_item.name.titleize %>
+      <ul>
+        <li>Quantity: <%= line_item.quantity %>
+        <li>Price: <%= number_to_currency(line_item.menu_item.price) %>
+      </ul>
+    </li>
+
+  <% end %>
+</ul>
+<h3>Sub total: <%= number_to_currency(@cart.sub_total) %></h3>
+
+<%= link_to "Proceed to checkout", new_order_path %><br>
